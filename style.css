@@ -116,18 +116,39 @@
     animation-delay: 2s;
     animation: animgalerie 25s;
 }
-/*commande*/
+/*page commande*/
 body{
     background-image: url(../worldOfFaces/images/fond.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.test{
-    width: auto;
-    height: 500px;
-    background-color: tomato;
-    display: flex;
+div.article {
+    width: 80%;
+    clear: both;
+    border: 5px solid red;
+    height: 400px;
+}
+div.article img{
+    border: 20px solid rgb(255, 255, 255);
+    padding-left: 300px;
+    background-color: rgba(54, 54, 54, 0.7);
+}
+.picture{
+
+
+}
+
+.responsive {
+padding: 20px 6px;
+float: left;
+width: 30%;
+clear: both;
 }
 div.gallery {
 border: 20px solid rgb(255, 255, 255);
+padding-left: 300px;
+background-color: rgba(54, 54, 54, 0.7);
+
 }
 
 div.gallery:hover {
@@ -137,6 +158,7 @@ border: 2px solid white;
 div.gallery img {
 width: 100%;
 height: auto;
+border: solid 2px white;
 }
 
 div.desc {
@@ -144,26 +166,24 @@ padding: 15px;
 text-align: center;
 }
 
-* {
+/** {
 box-sizing: border-box;
-}
+}*/
 
-.responsive {
-padding: 20px 6px;
-float: left;
-width: 51%;
-}
+
 .responsivetext {
 padding: 20px 6px;
 float: right;
-width: 48%;
+width: 30%;
 color: aliceblue;
 background-color: rgba(54, 54, 54, 0.5);
 }
 .responsiveright {
 padding: 20px 6px;
 float: right;
-width: 51%;
+width: 30%;
+clear: both;
+
 }
 @media only screen and (max-width: 700px) {
 .responsive {
