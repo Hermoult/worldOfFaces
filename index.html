@@ -19,9 +19,28 @@
             <div class="apropos">A propos</div>
             <div class="titre">World of Faces</div>
         </header>
-        <div class="galerie">
-            <p>Entrez dans la galerie</p>
-        </div>
+        <form action="controllers/read.php" method="POST" id ="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Adresse Email</label>
+                <input type="email" class="form-control-sm-light" id="exampleInputEmail1" aria-describedby="emailHelp" name="mail" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Mot de passe</label>
+                <input type="password" class="form-control-sm" id="exampleInputPassword1" name="mdp" required>
+            </div>
+            <button type="submit" class="btn btn-primary bg-dark ">Se connecter</button>
+        </form>
+        <form action="controllers/create.php" method="POST">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Adresse Email</label>
+                <input type="email" class="form-control-sm-light" id="exampleInputEmail1" aria-describedby="emailHelp" name="mail" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Mot de passe</label>
+                <input type="password" class="form-control-sm" id="exampleInputPassword1" name="mdp" required>
+            </div>
+            <button type="submit" class="btn btn-primary bg-dark ">Créer un compte</button>
+        </form>
     </div>
 </body>
 
