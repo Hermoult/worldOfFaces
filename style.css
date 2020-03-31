@@ -8,46 +8,6 @@
         opacity: 0;
     }
 }
-@keyframes animjim {
-    to{
-        opacity: 1;
-    }
-    from{
-        opacity: 0;
-    }
-}
-@keyframes animpresente {
-    100% {
-        opacity: 1;
-    }
-    0%{
-        opacity: 0;
-    }
-}
-@keyframes animapropos {
-    100% {
-        opacity: 1;
-    }
-    0%{
-        opacity: 0;
-    }
-}
-@keyframes animtitre {
-    100% {
-        opacity: 1;
-    }
-    0%{
-        opacity: 0;
-    }
-}
-@keyframes animgalerie {
-    100% {
-        opacity: 1;
-    }
-    0%{
-        opacity: 0;
-    }
-}
 
 /*Header*/
 /*suprime les bordures navigateur
@@ -59,8 +19,6 @@
 
 .anim {
     background-image: url(../worldOfFaces/images/fond.png);
-
-    
 }
 
 .header{
@@ -73,36 +31,45 @@
     padding: 1em;
     vertical-align: center;
     font-size: 40px;
-    animation-delay: 5s;
-    animation: animjim 10s;
+    animation-delay: 2s;
+    animation: fondu 5s;
 }
 .presente{
-    position: relative;
-    margin-left: 15em;
-    font-size: 20px;
-    animation-delay: 2s;
-    animation: animpresente 15s;
+    text-align: center; 
+    font-size: 25px;
+    animation-delay: 5s;
+    animation: fondu 5s;
 
 
 }
 .apropos{
-    padding: 3em;
     vertical-align: bottom;
+    color: white;
     text-align: right;
+    padding: 10px;
     animation-delay: 2s;
-    animation: animapropos 25s;
-
+    animation: fondu 5s;
+}
+.apropos a {
+    color: white;
 }
 .titre{
     position: relative;
     font-size: 80px;
     margin-top: 0;
     text-align: center;
-    animation-delay: 2s;
-    animation: animtitre 20s;
+    animation-delay: 10s;
+    animation: fondu 5s;
 }
 
-/*entrez dans la galerie*/
+#formumu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly ;
+    }
+
+/*entrez dans la galerie-------------------------------------------------*/
 .galerie{
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
     color: white;
@@ -114,7 +81,7 @@
     align-items: center;
     justify-content: center;
     animation-delay: 2s;
-    animation: animgalerie 25s;
+    animation: fondu 25s;
 }
 /*page commande*/
 body{
@@ -218,3 +185,5 @@ content: "";
 display: table;
 clear: both;
 }
+
+
