@@ -55,6 +55,7 @@
         opacity: 0;
     }
 }
+
 /*Header*/
 .anim {
     background-image: url(../worldOfFaces/images/fond.png);
@@ -62,6 +63,9 @@
     
     /* a modifier pour avoir un fond adapté et responsive*/
     height: 900px;
+    @media screen {
+        500px
+    }
     
 }
 
@@ -118,3 +122,4 @@
     animation-delay: 2s;
     animation: animgalerie 25s;
 }
+
