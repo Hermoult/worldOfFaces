@@ -1,10 +1,3 @@
-/*suprime les bordures navigateur*/
-.main{
-    /*display flex ?*/
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
 
 /*animation*/
 @keyframes fondu {
@@ -16,10 +9,10 @@
     }
 }
 @keyframes animjim {
-    100% {
+    to{
         opacity: 1;
     }
-    0%{
+    from{
         opacity: 0;
     }
 }
@@ -57,15 +50,16 @@
 }
 
 /*Header*/
+/*suprime les bordures navigateur
+.main{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}*/
+
 .anim {
     background-image: url(../worldOfFaces/images/fond.png);
-    animation: fondu 2s;
-    
-    /* a modifier pour avoir un fond adapté et responsive*/
-    height: 900px;
-    @media screen {
-        500px
-    }
+
     
 }
 
@@ -122,4 +116,85 @@
     animation-delay: 2s;
     animation: animgalerie 25s;
 }
+/*commande*/
+body{
+    background-image: url(../worldOfFaces/images/fond.png);
+}
+.test{
+    width: auto;
+    height: 500px;
+    background-color: tomato;
+    display: flex;
+}
+div.gallery {
+border: 20px solid rgb(255, 255, 255);
+}
 
+div.gallery:hover {
+border: 2px solid white;
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.responsive {
+padding: 20px 6px;
+float: left;
+width: 51%;
+}
+.responsivetext {
+padding: 20px 6px;
+float: right;
+width: 48%;
+color: aliceblue;
+background-color: rgba(54, 54, 54, 0.5);
+}
+.responsiveright {
+padding: 20px 6px;
+float: right;
+width: 51%;
+}
+@media only screen and (max-width: 700px) {
+.responsive {
+width: 49.99999%;
+margin: 6px 0;
+}
+.responsiveright {
+width: 49.99999%;
+margin: 6px 0;
+}
+.responsivetext {
+padding: 20px 6px;
+width: 80%;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.responsive {
+width: 100%;
+}
+.responsiveright {
+width: 100%;
+}
+.responsivetext {
+padding: 20px 6px;
+width: 80%;
+}
+}
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
