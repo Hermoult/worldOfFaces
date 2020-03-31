@@ -12,7 +12,7 @@
     $stmt->execute([$mail]);
     $d = $stmt->fetch();
 
-    
+
     if($mail == $d['mail']){
         echo "Adresse mail existante";
     }
@@ -21,6 +21,5 @@
         $sqli = "INSERT INTO user (mail, mdp) VALUES (?,?)";
         $stmt = $pdo->prepare($sqli);
         $stmt->execute([$mail,$mdp]);
-        echo"nouveau profil créé";
-        /* header('location: ../commande.html'); */
+        header('location: ../commande.html');
         }
