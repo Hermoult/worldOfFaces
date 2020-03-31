@@ -1,0 +1,120 @@
+/*suprime les bordures navigateur*/
+.main{
+    /*display flex ?*/
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/*animation*/
+@keyframes fondu {
+    100% {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes animjim {
+    100% {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes animpresente {
+    100% {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes animapropos {
+    100% {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes animtitre {
+    100% {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+}
+@keyframes animgalerie {
+    100% {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+}
+/*Header*/
+.anim {
+    background-image: url(../worldOfFaces/images/fond.png);
+    animation: fondu 2s;
+    
+    /* a modifier pour avoir un fond adapté et responsive*/
+    height: 900px;
+    
+}
+
+.header{
+    /*border: 5px solid white;*/
+    color: white;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+
+.jim{
+    padding: 1em;
+    vertical-align: center;
+    font-size: 40px;
+    animation-delay: 5s;
+    animation: animjim 10s;
+}
+.presente{
+    position: relative;
+    margin-left: 15em;
+    font-size: 20px;
+    animation-delay: 2s;
+    animation: animpresente 15s;
+
+
+}
+.apropos{
+    padding: 3em;
+    vertical-align: bottom;
+    text-align: right;
+    animation-delay: 2s;
+    animation: animapropos 25s;
+
+}
+.titre{
+    position: relative;
+    font-size: 80px;
+    margin-top: 0;
+    text-align: center;
+    animation-delay: 2s;
+    animation: animtitre 20s;
+}
+
+/*entrez dans la galerie*/
+.galerie{
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    color: white;
+    font-size: 50px;
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 2s;
+    animation: animgalerie 25s;
+}
