@@ -1,6 +1,8 @@
 <?php
 
+
     // Recuperation des données entrée par le client, mise en variable
+
     $mail = htmlspecialchars($_POST['mail']);
     $mdp = htmlspecialchars($_POST['mdp']);
 
@@ -12,7 +14,6 @@
     $stmt->execute([$mail]);
     $d = $stmt->fetch();
 
-
     if($mail == $d['mail']){
         echo "Adresse mail existante";
     }
@@ -21,5 +22,15 @@
         $sqli = "INSERT INTO user (mail, mdp) VALUES (?,?)";
         $stmt = $pdo->prepare($sqli);
         $stmt->execute([$mail,$mdp]);
-        header('location: ../commande.html');
+        header('Location: ../commande.html');
+        }
+
+
+        /**
+         * test
+         *
+         * @return void fonction qui sert a
+         */
+        function test(){
+
         }

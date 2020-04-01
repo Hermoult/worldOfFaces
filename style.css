@@ -28,9 +28,9 @@
 }
 
 .jim{
-    padding: 1em;
+    padding: 30px;
     vertical-align: center;
-    font-size: 40px;
+    font-size: 35px;
     animation-delay: 2s;
     animation: fondu 5s;
 }
@@ -62,12 +62,7 @@
     animation: fondu 5s;
 }
 
-#formumu{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly ;
-    }
+
 
 /*entrez dans la galerie-------------------------------------------------*/
 .galerie{

@@ -1,5 +1,5 @@
 <?php
-    // Variables Database
+/*     // Variables Database */
     $DB_NAME = "worldofface";
     $DB_DSN = "mysql:host=localhost;dbname=".$DB_NAME;
     $DB_USER = "adrien"; 
