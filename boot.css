@@ -1,0 +1,22 @@
+body{
+    background-image: url(../worldOfFaces/images/fond.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.article {
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.5);
+    border: 2px solid red;
+    }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+.gauche{
+    margin-left: 2em;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}

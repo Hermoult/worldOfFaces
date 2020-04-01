@@ -62,3 +62,30 @@ body{
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
+@media only screen and (max-width: 700px) {
+    ..articleright {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+    .picture {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+    .responsivetext {
+    padding: 20px 6px;
+    width: 80%;
+    }
+    }
+    
+    @media only screen and (max-width: 500px) {
+    .responsive {
+    width: 100%;
+    }
+    .responsiveright {
+    width: 100%;
+    }
+    .responsivetext {
+    padding: 20px 6px;
+    width: 80%;
+    }
+    }
