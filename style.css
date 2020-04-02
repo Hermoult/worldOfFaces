@@ -24,7 +24,7 @@
 .header{
     /*border: 5px solid white;*/
     color: white;
-    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    text-shadow:rgba(000, 000, 000, 0.5) 1px 1px, rgba(000, 000, 000, 0.5)-1px 1px, rgba(000, 000, 000, 0.5) -1px -1px, rgba(000, 000, 000, 0.5) 1px -1px;
 }
 
 .jim{
