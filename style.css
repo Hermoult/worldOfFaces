@@ -35,21 +35,36 @@
 .btn{
     font-family: 'Playfair Display', serif;
     outline-color: grey;
+    font-size: x-large;
 }
-
 
 .btn:focus, .btn:active {
     outline: none !important;
     box-shadow: none !important;
 }
 
-.jim{
+.apropos,.jim{
     padding: 30px;
-    vertical-align: center;
     font-size: 35px;
+    font-family: 'Playfair Display', serif;
     animation-delay: 2s;
     animation: fondu 5s;
+    color: white
 }
+
+/* .apropos{
+    vertical-align: bottom;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-transform: uppercase;
+    animation-delay: 2s;
+    animation: fondu 5s;
+} */
+.apropos:hover{
+    color: #ffffff;
+}
+
+
 .presente{
     color: black;
     font-family: 'Playfair Display', serif;
@@ -59,22 +74,13 @@
     animation: fondu 5s;
     text-transform: uppercase;
 }
-.apropos{
-    vertical-align: bottom;
-    color: white;
-    text-align: right;
-    padding: 10px;
-    animation-delay: 2s;
-    animation: fondu 5s;
-    text-transform: uppercase;
-}
 .apropos a {
     color: white;
 }
 .titre{
     position: relative;
-    color: black;
-    /* text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px; */
+    color: rgb(0, 0, 0);
+    /* text-shadow:rgba(000, 000, 000, 0.5) 1px 1px, rgba(000, 000, 000, 0.5)-1px 1px, rgba(000, 000, 000, 0.5) -1px -1px, rgba(000, 000, 000, 0.5) 1px -1px; */
     font-family: 'Playfair Display', serif;
     font-size: 80px;
     margin-top: 0;
@@ -82,7 +88,6 @@
     animation-delay: 10s;
     animation: fondu 5s;
 }
-
 
 
 /*entrez dans la galerie-------------------------------------------------*/
