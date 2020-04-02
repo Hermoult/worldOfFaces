@@ -1,20 +1,21 @@
-body{
-    background-image: url(../worldOfFaces/images/fond.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/*page commande*/
+.fondgallery{
+  background-image: url(../worldOfFaces/images/fond.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .article {
-    width: 80%;
-    background-color: rgba(54, 54, 54, 0.5);
-    height: auto;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    }
+  width: 80%;
+  background-color: rgba(54, 54, 54, 0.5);
+  height: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  }
 
 .reverse{
-    flex-direction: row-reverse;
-    margin-left: 20%;
+  flex-direction: row-reverse;
+  margin-left: 20%;
 }
 
 .text{
@@ -23,19 +24,19 @@ body{
 
 @media screen and (min-width: 900px){
   .hauteur{
-    height: 50%;
-    width: 80%;
-    align-items: center;
-    margin: auto;
-    padding: 10px;
+  height: 50%;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
 
   }
 }
 
 @media screen and (max-width: 900px){
   .hauteur{
-    padding: 10px;}
-    .article {
+      padding: 10px;}
+      .article {
       width: 100%;
       background-color: rgba(54, 54, 54, 0.5);
       height: auto;
@@ -43,8 +44,6 @@ body{
       margin-bottom: 3em;
       }
 }
-
-
 
 img{
 -webkit-filter: grayscale(100%);

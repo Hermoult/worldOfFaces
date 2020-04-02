@@ -1,35 +1,33 @@
 
 /*animation*/
 @keyframes fondu {
-    100% {
-        opacity: 1;
-    }
-    0%{
+    0% {
         opacity: 0;
     }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
-/*Header*/
-/*suprime les bordures navigateur
-.main{
-    border: 0;
-    padding: 0;
-    margin: 0;
-}*/
-body{
-    animation: fondu 5s;
-}
-
-.fond {
+.bg{
     background-image: url(../worldOfFaces/images/fond.png);
-
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    animation: fondu 5s;
+    z-index: 2;
+    min-height: 100vh;
+    border-color: 2px solid red;
+    
 }
+
 .container{
     background-color: rgba(255, 255, 255, 0.445);
     padding-bottom: 35px !important;
-
 }
-
 
 .btn{
     font-family: 'Playfair Display', serif;
@@ -40,6 +38,7 @@ body{
     outline: none !important;
     box-shadow: none !important;
 }
+
 .btn:after {
     display:block;
     content: '';
@@ -47,6 +46,7 @@ body{
     transform: scaleX(0);  
     transition: transform 400ms ease-in-out;
 }
+
 .btn:hover:after { transform: scaleX(1); }
 
 .apropos,.jim{
@@ -56,18 +56,12 @@ body{
     color: white
 }
 
-/* .apropos{
-    vertical-align: bottom;
-    font-family: 'Playfair Display', serif;
-    color: white;
-    text-transform: uppercase;
-    animation-delay: 2s;
-    animation: fondu 5s;
-} */
+
 .apropos:hover{
     color: #ffffff;
     text-decoration: none;
 }
+
 .apropos:hover:after {
     transform: scaleX(1); 
     color: white !important;
@@ -85,13 +79,14 @@ body{
     font-size: 25px;
     text-transform: uppercase;
 }
+
 .apropos a {
     color: white;
 }
+
 .titre{
     position: relative;
     color: rgb(0, 0, 0);
-
     border-radius: 10px;
     /* text-shadow:rgba(000, 000, 000, 0.5) 1px 1px, rgba(000, 000, 000, 0.5)-1px 1px, rgba(000, 000, 000, 0.5) -1px -1px, rgba(000, 000, 000, 0.5) 1px -1px; */
     font-family: 'Playfair Display', serif;
@@ -114,101 +109,62 @@ body{
     justify-content: center;
 }
 /*page commande*/
-body{
+.fondgallery{
     background-image: url(../worldOfFaces/images/fond.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-div.article {
+
+.article {
     width: 80%;
-    clear: both;
-    border: 5px solid red;
-    height: 400px;
-}
-div.article img{
-    border: 20px solid rgb(255, 255, 255);
-    padding-left: 300px;
-    background-color: rgba(54, 54, 54, 0.7);
+    background-color: rgba(54, 54, 54, 0.5);
+    height: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    }
+
+.reverse{
+    flex-direction: row-reverse;
+    margin-left: 20%;
 }
 
-.responsive {
-padding: 20px 6px;
-float: left;
-width: 30%;
-clear: both;
-}
-div.gallery {
-border: 20px solid rgb(255, 255, 255);
-padding-left: 300px;
-background-color: rgba(54, 54, 54, 0.7);
-
+.text{
+    color: azure;
 }
 
-div.gallery:hover {
-border: 2px solid white;
+@media screen and (min-width: 900px){
+    .hauteur{
+    height: 50%;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+
+    }
 }
 
-div.gallery img {
-width: 100%;
-height: auto;
-border: solid 2px white;
+@media screen and (max-width: 900px){
+    .hauteur{
+        padding: 10px;}
+        .article {
+        width: 100%;
+        background-color: rgba(54, 54, 54, 0.5);
+        height: auto;
+        margin: auto;
+        margin-bottom: 3em;
+        }
 }
 
-div.desc {
-padding: 15px;
-text-align: center;
-}
 
-/** {
-box-sizing: border-box;
-}*/
 
-.responsivetext {
-padding: 20px 6px;
-float: right;
-width: 30%;
-color: aliceblue;
-background-color: rgba(54, 54, 54, 0.5);
+img{
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
 }
-.responsiveright {
-padding: 20px 6px;
-float: right;
-width: 30%;
-clear: both;
-
+img:hover {
+-webkit-filter: grayscale(0);
+filter: grayscale(0);
 }
-@media only screen and (max-width: 700px) {
-.responsive {
-width: 49.99999%;
-margin: 6px 0;
-}
-.responsiveright {
-width: 49.99999%;
-margin: 6px 0;
-}
-.responsivetext {
-padding: 20px 6px;
-width: 80%;
-}
-}
-
-@media only screen and (max-width: 500px) {
-.responsive {
-width: 100%;
-}
-.responsiveright {
-width: 100%;
-}
-.responsivetext {
-padding: 20px 6px;
-width: 80%;
-}
-}
-
-.clearfix:after {
-content: "";
-display: table;
-clear: both;
-}
-
 

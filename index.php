@@ -17,8 +17,7 @@
 
 
 <body >
-<div class="bgg">
-
+<div class="bg img-fluid">
     <div class="container">
         <header>
             <div class="row ">
