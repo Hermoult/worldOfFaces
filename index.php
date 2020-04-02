@@ -18,16 +18,15 @@
 <body class="anim">
     <div class="container">
         <header>
-            <div class="row">
-            <div class="col text-white jim">Jim Photo</div>
-            <div class="col text-white text-right font-weight-bold text-uppercase 
-            apropos"><a href="apropos.html">A propos</a></div>
+            <div class="row ">
+            <div class="col-9 jim">Jim Photo</div>
+            <a class="col apropos" href="apropos.html">A propos</a>
             </div>
             <div class="col presente">Presente</div>
             <div class="col titre">World of Faces</div>
         </header>
         <p>
-        <a class="btn border-0 col-4 offset-4 active-0px active" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Entrer dans la galerie</a>
+        <a class="btn border-0 col-4 offset-4 entrer" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Entrer dans la galerie</a>
         </p>
         <div class="row offset-4">
             <div class="col">
