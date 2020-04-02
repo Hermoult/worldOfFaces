@@ -42,7 +42,7 @@
                                 <input type="password" class="form-control-sm" id="exampleInputPassword1" name="mdp" required>
                             </div>
                             <button type="submit" class="btn btn-primary bg-dark border-0" value= "Envoyer" >Se connecter</button>
-                            <button class="btn btn-primary bg-transparent border-0 text-dark" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Pas encore incrit ?</button>
+                            <button class="btn btn-primary bg-transparent border-0 text-dark" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Inscription</button>
                         </form>
                     </div>
                     <div class="col">
