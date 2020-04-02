@@ -28,49 +28,33 @@
     background-color: rgba(255, 255, 255, 0.445);
     padding-bottom: 35px !important;
 }
-
-.btn{
-    font-family: 'Playfair Display', serif;
-    font-size: x-large;
+#prop{
+    text-align: center;
+    text-decoration: none !important;
 }
 
-.btn:focus, .btn:active {
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-.btn:after {
-    display:block;
-    content: '';
-    border-bottom: solid 1px #000000;  
-    transform: scaleX(0);  
-    transition: transform 400ms ease-in-out;
-}
-
-.btn:hover:after { transform: scaleX(1); }
-
-.apropos,.jim{
+#prop,.jim{
     padding: 30px;
     font-size: 35px;
     font-family: 'Playfair Display', serif;
     color: white
 }
 
-
-.apropos:hover{
-    color: #ffffff;
-    text-decoration: none;
+/* EFFET DE SOULIGNEMENT A PROPOS --------------------------*/
+#prop:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px #000000;  
+    transform: scaleX(0);  
+    transition: transform 400ms ease-in-out;
 }
-
-.apropos:hover:after {
+#prop:hover:after {
     transform: scaleX(1); 
     color: white !important;
+    text-decoration: none !important;
     }
+/* -------------------------------------------------------------- */
 
-.apropos a {
-    color: white;
-    text-align: center;
-}
 
 .presente{
     color: black;
@@ -80,91 +64,32 @@
     text-transform: uppercase;
 }
 
-.apropos a {
-    color: white;
-}
-
 .titre{
     position: relative;
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    /* text-shadow:rgba(000, 000, 000, 0.5) 1px 1px, rgba(000, 000, 000, 0.5)-1px 1px, rgba(000, 000, 000, 0.5) -1px -1px, rgba(000, 000, 000, 0.5) 1px -1px; */
     font-family: 'Playfair Display', serif;
     font-size: 80px;
     margin-top: 0;
     text-align: center;
 }
-
-
-/*entrez dans la galerie-------------------------------------------------*/
-.galerie{
-    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-    color: white;
-    font-size: 50px;
-    margin-top: 2em;
-    width: 100%;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
+#bouton{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
 }
-/*page commande*/
-.fondgallery{
-    background-image: url(../worldOfFaces/images/fond.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.btn{
+    font-size: x-large !important;
 }
-
-.article {
-    width: 80%;
-    background-color: rgba(54, 54, 54, 0.5);
-    height: auto;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    }
-
-.reverse{
-    flex-direction: row-reverse;
-    margin-left: 20%;
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
-
-.text{
-    color: azure;
+.btn:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px #000000;  
+    transform: scaleX(0);  
+    transition: transform 400ms ease-in-out;
 }
-
-@media screen and (min-width: 900px){
-    .hauteur{
-    height: 50%;
-    width: 80%;
-    align-items: center;
-    margin: auto;
-    padding: 10px;
-
-    }
-}
-
-@media screen and (max-width: 900px){
-    .hauteur{
-        padding: 10px;}
-        .article {
-        width: 100%;
-        background-color: rgba(54, 54, 54, 0.5);
-        height: auto;
-        margin: auto;
-        margin-bottom: 3em;
-        }
-}
-
-
-
-img{
--webkit-filter: grayscale(100%);
-filter: grayscale(100%);
--webkit-transition: .3s ease-in-out;
-transition: .3s ease-in-out;
-}
-img:hover {
--webkit-filter: grayscale(0);
-filter: grayscale(0);
-}
+.btn:hover:after { transform: scaleX(1); }
 

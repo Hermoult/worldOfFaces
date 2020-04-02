@@ -21,15 +21,15 @@
     <div class="container">
         <header>
             <div class="row ">
-            <div class="col-9 jim">Jim Photo</div>
-            <a class="col apropos" href="apropos.html">A propos</a>
+            <div class="col jim text-center text-sm-left" >Jim Photo</div>
+            <a id ="prop" class="col-lg-3 col-md-4 col-sm-6" href="apropos.html">A propos</a>
             </div>
             <div class="col presente">Presente</div>
             <div class="col titre">World of Faces</div>
         </header>
-        <p>
-        <a class="btn border-0 col-4 offset-4 entrer" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Entrer dans la galerie</a>
-        </p>
+        <div id="bouton">
+        <a class="btn" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Entrer dans la galerie</a>
+        </div>
         <div class="row offset-4">
             <div class="col">
                 <div class="collapse multi-collapse" id="multiCollapseExample1">
