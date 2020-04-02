@@ -5,6 +5,14 @@
     background-attachment: fixed;
 }
 
+.titre{
+    color: azure;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    margin-top: 0;
+    text-align: center;
+}
 .article {
     width: 80%;
     background-color: rgba(54, 54, 54, 0.5);

@@ -1,3 +1,8 @@
+.fondgallery{
+    background-image: url(../worldOfFaces/images/fond.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 #desc{
     color: rgb(0, 0, 0);
     text-align: center;
