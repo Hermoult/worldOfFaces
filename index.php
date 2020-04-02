@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Of Faces</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -16,14 +17,17 @@
 
 <body class="anim">
     <div class="container">
-        <header class=" ">
-            <div class="col text-white text-left font-weight-bold">Jim Photo</div>
-            <div class="col text-white text-center font-weight-bold text-uppercase">Presente</div>
-            <div class="col text-white text-right font-weight-bold text-uppercase"><a href="apropos.html">A propos</a></div>
-            <div class="col text-white text-center font-weight-bold text-uppercase">World of Faces</div>
+        <header>
+            <div class="row">
+            <div class="col text-white jim">Jim Photo</div>
+            <div class="col text-white text-right font-weight-bold text-uppercase 
+            apropos"><a href="apropos.html">A propos</a></div>
+            </div>
+            <div class="col presente">Presente</div>
+            <div class="col titre">World of Faces</div>
         </header>
         <p>
-        <a class="btn btn-primary bg-transparent border-0 col-4 offset-4 font-weight-bold" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Entrer dans la gallerie</a>
+        <a class="btn border-0 col-4 offset-4 active-0px active" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Entrer dans la galerie</a>
         </p>
         <div class="row offset-4">
             <div class="col">
@@ -37,9 +41,8 @@
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Mot de passe</label>
                                 <input type="password" class="form-control-sm" id="exampleInputPassword1" name="mdp" required>
-                                <div style="color:red;font-size:small">Mail / mot de passe incorrect</div>
                             </div>
-                            <button type="submit" class="btn btn-primary bg-dark border-0">Se connecter</button>
+                            <button type="submit" class="btn btn-primary bg-dark border-0" value= "Envoyer" >Se connecter</button>
                             <button class="btn btn-primary bg-transparent border-0 text-dark" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Pas encore incrit ?</button>
                         </form>
                     </div>
@@ -54,9 +57,8 @@
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Mot de passe</label>
                                         <input type="password" class="form-control-sm" id="exampleInputPassword1" name="mdp" required>
-                                        <div style="color:red;font-size:small">Attention, cette adresse mail est déjà associé à un compte</div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary bg-dark border-0">Créer un compte</button>
+                                    <button type="submit" class="btn btn-primary bg-dark border-0" value="Envoyer">Créer un compte</button>
                                 </form>
                             </div>
                         </div>
@@ -66,6 +68,5 @@
         </div>
     </div>
 </body>
-
 </html>
 
