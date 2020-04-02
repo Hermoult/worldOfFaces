@@ -27,6 +27,22 @@
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
+.btn:hover{
+    background-color: rgba(77, 73, 73, 0.644);
+
+}
+
+.btn{
+    font-family: 'Playfair Display', serif;
+    outline-color: grey;
+}
+
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .jim{
     padding: 30px;
     vertical-align: center;
@@ -35,12 +51,13 @@
     animation: fondu 5s;
 }
 .presente{
+    color: black;
+    font-family: 'Playfair Display', serif;
     text-align: center; 
     font-size: 25px;
     animation-delay: 5s;
     animation: fondu 5s;
-
-
+    text-transform: uppercase;
 }
 .apropos{
     vertical-align: bottom;
@@ -49,12 +66,16 @@
     padding: 10px;
     animation-delay: 2s;
     animation: fondu 5s;
+    text-transform: uppercase;
 }
 .apropos a {
     color: white;
 }
 .titre{
     position: relative;
+    color: black;
+    /* text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px; */
+    font-family: 'Playfair Display', serif;
     font-size: 80px;
     margin-top: 0;
     text-align: center;
@@ -95,10 +116,6 @@ div.article img{
     padding-left: 300px;
     background-color: rgba(54, 54, 54, 0.7);
 }
-.picture{
-
-
-}
 
 .responsive {
 padding: 20px 6px;
@@ -131,7 +148,6 @@ text-align: center;
 /** {
 box-sizing: border-box;
 }*/
-
 
 .responsivetext {
 padding: 20px 6px;

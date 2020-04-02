@@ -1,5 +1,7 @@
 <?php
+session_start();
 
+if (isset($_POST['mail'])) {
     // Recup des données du formulaire
     $mail = htmlspecialchars($_POST['mail']);
     $mdp = htmlspecialchars($_POST['mdp']);
@@ -15,9 +17,8 @@
     // Réponse sur le navigateur
     if($mail == $d['mail'] && $mdp == $d['mdp']){
         header('location: ../commande.html'); ;
-        }
-        else
-            {
-            echo "Pas de profil correspondant";
+    }    else{
+        header('location:erreur.php'); ;
     }
+}
 ?>

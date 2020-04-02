@@ -1,6 +1,4 @@
 <?php
-
-
     // Recuperation des données entrée par le client, mise en variable
 
     $mail = htmlspecialchars($_POST['mail']);
@@ -14,23 +12,17 @@
     $stmt->execute([$mail]);
     $d = $stmt->fetch();
 
+    $sqli = 'INSERT INTO user (mail,mdp) VALUES (?,?)';
+    $stmt = $pdo->prepare($sqli);
+    $stmt->execute([$mail,$mdp]);
+
     if($mail == $d['mail']){
-        echo "Adresse mail existante";
+        header('location:erreur.php');
     }
     else{
-        // Creation profil et accès gallerie
-        $sqli = "INSERT INTO user (mail, mdp) VALUES (?,?)";
+        $sqli = 'INSERT INTO user (mail,mdp) VALUES (?,?)';
         $stmt = $pdo->prepare($sqli);
         $stmt->execute([$mail,$mdp]);
-        header('Location: ../commande.html');
+        header('location:../commande.html'); ;
         }
-
-
-        /**
-         * test
-         *
-         * @return void fonction qui sert a
-         */
-        function test(){
-
-        }
+?>
