@@ -16,13 +16,64 @@
     padding-bottom: 35px !important;
 
 }
-
-
-.btn{
-    font-family: 'Playfair Display', serif;
-    font-size: x-large;
+#prop{
+    text-align: center;
+    text-decoration: none !important;
 }
 
+#prop,.jim{
+    padding: 30px;
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    animation-delay: 2s;
+    animation: fondu 5s;
+    color: white;
+}
+
+/* EFFET DE SOULIGNEMENT A PROPOS --------------------------*/
+#prop:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px #000000;  
+    transform: scaleX(0);  
+    transition: transform 400ms ease-in-out;
+}
+#prop:hover:after {
+    transform: scaleX(1); 
+    color: white !important;
+    text-decoration: none !important;
+    }
+/* -------------------------------------------------------------- */
+
+
+.presente{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    text-align: center; 
+    font-size: 25px;
+    animation-delay: 5s;
+    animation: fondu 5s;
+    text-transform: uppercase;
+}
+
+.titre{
+    position: relative;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    margin-top: 0;
+    text-align: center;
+    animation-delay: 10s;
+    animation: fondu 5s;
+}
+#bouton{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.btn{
+    font-size: x-large !important;
+}
 .btn:focus, .btn:active {
     outline: none !important;
     box-shadow: none !important;
@@ -36,73 +87,6 @@
 }
 .btn:hover:after { transform: scaleX(1); }
 
-.apropos,.jim{
-    padding: 30px;
-    font-size: 35px;
-    font-family: 'Playfair Display', serif;
-    animation-delay: 2s;
-    animation: fondu 5s;
-    color: white;
-}
-
-.apropos:after {
-    display:block;
-    content: '';
-    border-bottom: solid 1px #000000;  
-    transform: scaleX(0);  
-    transition: transform 400ms ease-in-out;
-}
-.apropos:hover:after {
-    transform: scaleX(1); 
-    color: white !important;
-    }
-
-.apropos a {
-    color: white;
-    text-align: center;
-}
-
-.presente{
-    color: black;
-    font-family: 'Playfair Display', serif;
-    text-align: center; 
-    font-size: 25px;
-    animation-delay: 5s;
-    animation: fondu 5s;
-    text-transform: uppercase;
-}
-.apropos a {
-    color: white;
-}
-.titre{
-    position: relative;
-    color: rgb(0, 0, 0);
-
-    border-radius: 10px;
-    /* text-shadow:rgba(000, 000, 000, 0.5) 1px 1px, rgba(000, 000, 000, 0.5)-1px 1px, rgba(000, 000, 000, 0.5) -1px -1px, rgba(000, 000, 000, 0.5) 1px -1px; */
-    font-family: 'Playfair Display', serif;
-    font-size: 80px;
-    margin-top: 0;
-    text-align: center;
-    animation-delay: 10s;
-    animation: fondu 5s;
-}
-
-
-/*entrez dans la galerie-------------------------------------------------*/
-.galerie{
-    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-    color: white;
-    font-size: 50px;
-    margin-top: 2em;
-    width: 100%;
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    animation-delay: 2s;
-    animation: fondu 25s;
-}
 /*page commande*/
 body{
     background-image: url(../worldOfFaces/images/fond.png);
@@ -148,10 +132,6 @@ div.desc {
 padding: 15px;
 text-align: center;
 }
-
-/** {
-box-sizing: border-box;
-}*/
 
 .responsivetext {
 padding: 20px 6px;
@@ -200,5 +180,3 @@ content: "";
 display: table;
 clear: both;
 }
-
-

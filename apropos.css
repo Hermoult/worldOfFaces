@@ -1,0 +1,17 @@
+#desc{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#entete{
+    padding: 5%;
+    font-family: 'Playfair Display', serif;
+    font-size: xx-large;
+}
+
+#blabla{
+    margin: 2%;
+    padding: 2%;
+    background-color: rgba(51, 49, 46, 0.363);
+    color: blanchedalmond;
+}
