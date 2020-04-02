@@ -16,9 +16,13 @@
     padding: 0;
     margin: 0;
 }*/
+body{
+    animation: fondu 5s;
+}
 
-.anim {
+.fond {
     background-image: url(../worldOfFaces/images/fond.png);
+
 }
 
 .header{
@@ -47,8 +51,6 @@
     padding: 30px;
     font-size: 35px;
     font-family: 'Playfair Display', serif;
-    animation-delay: 2s;
-    animation: fondu 5s;
     color: white
 }
 
@@ -62,6 +64,7 @@
 } */
 .apropos:hover{
     color: #ffffff;
+    text-decoration: none;
 }
 
 
@@ -70,8 +73,6 @@
     font-family: 'Playfair Display', serif;
     text-align: center; 
     font-size: 25px;
-    animation-delay: 5s;
-    animation: fondu 5s;
     text-transform: uppercase;
 }
 .apropos a {
@@ -85,8 +86,6 @@
     font-size: 80px;
     margin-top: 0;
     text-align: center;
-    animation-delay: 10s;
-    animation: fondu 5s;
 }
 
 
@@ -101,8 +100,6 @@
     position: absolute;
     align-items: center;
     justify-content: center;
-    animation-delay: 2s;
-    animation: fondu 25s;
 }
 /*page commande*/
 body{
