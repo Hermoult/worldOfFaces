@@ -29,7 +29,7 @@
         /**
          * test
          *
-         * @return void fonction qui sert a
+         * @return void fonction qui sert a tester le commentaire
          */
         function test(){
 
